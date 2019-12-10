@@ -1,0 +1,29 @@
+# Node 
+node_modules/
+
+# Project
+dist/
+
+*.csv
+*.dat
+*.iml
+*.log
+*.out
+*.pid
+*.seed
+*.sublime-*
+*.swo
+*.swp
+*.tgz
+*.xml
+.DS_Store
+.env
+.idea
+.project
+.strong-pm
+.vscode
+coverage
+lib-cov
+logs
+npm-debug.log
+reports
