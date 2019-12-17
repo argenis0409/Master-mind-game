@@ -4,7 +4,10 @@ import Game from './components/Game';
 class App extends Component {
   render() {
     return (
-      <Game />
+      <>
+        <h1>Memory Game</h1>
+        <Game />
+      </>
     )
   }
 };

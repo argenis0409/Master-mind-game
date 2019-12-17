@@ -23,6 +23,4 @@ export default class Card extends Component {
       )
     }
   }
-  
-  ReactDOM.render( <PlayGround/>, document.getElementById('app'))
 
