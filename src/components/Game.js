@@ -98,12 +98,31 @@ export default class Game extends Component {
       }
 
     render() {
+            let cardViews = this.getCardViews();
+        let gameStatus = <div className='Game-status'>
+                        <div>Turn: {this.state.turnNo}</div>
+                        <div>Pairs found: {this.state.pairsFound}</div>
+                        </div>;
+
+        if (this.state.pairsFound === this.memoryCards.NUM_IMAGES) {
+        gameStatus = <div className='Game-status'>
+                        <div>GAME COMPLETE!</div>
+                        <div>You used {this.state.turnNo-1} turns</div>
+                        <div><button onClick={this.onPlayAgain}>Play again?</button></div></div>;      
+        }
+
         return (
+         <div className='Game'>
+            <header className='Game-header'>
+              <div className='Game-title'>React Memory Game</div>
+            </header>
             <div>
-                <h1>Game here</h1>
-                <Card />
-                <CardsView />
+            {gameStatus}
             </div>
+            <div className='CardContainer'>
+            {cardViews}
+            </div>
+        </div>
         )
     }
 }
