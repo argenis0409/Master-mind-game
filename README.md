@@ -14,4 +14,6 @@ npm install
 ```
 npm start
 ```
-## More Info Coming SECTION 
+## General Info
+After running the commands above your browser should open automatically.
+Once the browser open with the game go ahead and have fun.
